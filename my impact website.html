@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>impact</title>
+	<link rel="stylesheet" type="text/css" href="my impact website.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../fontawesome-free-6.1.1-web/css/all.css">
+	<style>
+		*{
+			margin: 0; 
+			padding: 0;
+			box-sizing: border-box;
+			outline: none;
+		 }
+		 .reveal{
+			position: relative;
+			transform: translateY(150px);
+			opacity: 0;
+			transition: 1s all ease;
+		  }
+		  .reveal.active{
+			transform: translateY(0);
+			opacity: 1;
+		  }
+		 html{
+			 scroll-behavior: smooth;
+		 }
+		 a{
+			 text-decoration: none;
+			 
+		 }
+		 li{
+			 list-style-type: none;
+		 }
+		 .btn{
+			 display: block;
+			 width: fit-content;      /*--takes the width of what u have---*/
+			 padding: 15px 36px;
+			 border-radius:30px;
+			 background-color: rgb(41, 138, 128);
+			 font-size: 1.2rem;
+		 
+		 }
+		 .social a{
+		 padding: 6px;
+		 border-radius: 50%;
+		 border: 1px solid grey;
+		 display: inline-block;
+		 color: #ddd;
+		 }
+		 .social i{
+			 font-size: 1.2rem;
+		 }
+		 header{
+			 display: flex;
+			 justify-content: space-between;
+			 background-color: rgb(0, 131, 116);
+			 padding: 20px 40px;
+			 align-items: center;
+			 position: sticky;
+			 top: 0;
+			 z-index: 9;
+			 margin-top: -1.7px;
+		 }
+		 header li{
+			 display: inline-block;
+			 margin-left: 20px;
+		 }
+		 header a{
+			 font-size: 1.2rem;
+			 color:white;
+		 }
+		 .brand{
+			 font-size: 2rem;
+			 font-weight: bold;
+		 }
+		 body{
+			 font-family: sans-serif;
+		 }
+		 header li::after{
+			 content:"" ;
+			 display: block;
+			 width: 0%;
+			  background-color:#f55;
+			  height: 3px;
+			  margin-top: 5px;  
+			  /* transtion is a way to slow something down */
+			   transition: 1s;
+		 
+		 }
+		 header li:hover::after{
+			 width: 100%;
+		 }
+		 header .fa-bars{
+			 display: none;
+			 font-size: 2rem;
+			 color: white;
+		 }
+		 header ul .fa-close{
+			 display: none;
+		 }
+		 #hero{
+			 background-color: rgb(0, 131, 116);
+			 display: flex;
+			  padding: 40px;
+			  align-items: center;
+			  height: 100vh;
+		 }
+		 #hero h1{
+			 font-size: 3rem;
+			 color: white;
+			
+		 }
+		 #hero p{
+			 color: rgb(189, 176, 176);
+			 margin: 30px  0;
+			 max-width: 80%;
+			 text-align: start;
+		 }
+		 #hero .btn{
+			 border: 2px solid rgba(128,128,128,0.456);
+			 box-shadow: 0 0 15px rgba(0,0,0,0.2);
+		 }
+		 #about{
+			 padding: 20px 40px;
+		 }
+		 section > h1, #testimonial h1{
+			 text-align: center;
+			 font-size: 2.2rem;
+		 }
+		 section > h1::after,#testimonial h1::after{
+			 content:"" ;
+			 display: block;
+			 width: 55px;
+			  background-color: rgb(0, 131, 116);
+			  height: 3px;
+			   transition: 1.5s;
+			   margin: auto ;
+		 
+		 }
+		 #about > p{
+			 margin: 20px 40px;
+			 text-align: center;
+		 }
+		 #about article{
+			 display: flex;
+			 /* gap: 30px; */
+			 justify-content: space-between;    
+		 }
+		 #about article p{
+			line-height: 180%;
+			text-align: justify;
+			/* font-size: 150%; */
+		 }
+		 #about article div:nth-child(2){
+			 flex-basis: 46.5%;
+		 }
+		 #about article div:nth-child(1){
+			 flex-basis: 46.5%;
+		 }
+		 #about article img{
+			 width: 100%;
+			 border-radius: 4%;
+		 }
+		 #about li::before{
+			 content: "\2705";
+			 margin-right: 10px;
+		 }
+		 #about article li{
+			 margin-bottom: 10px;
+			 line-height: 180%;
+			text-align: justify;
+			/* font-size: 142%; */
+			font-weight: bold;
+		 }
+		 #subscribe{
+			 background:linear-gradient(rgba(0, 0, 0, 0.555),rgba(0, 0, 0, 0.555)),  url(images/pexels-photo.jpeg) no-repeat;
+			 background-size: cover; 
+		 height: 500px;
+		 margin: 50px auto;
+		 width: 80%;
+		 border-radius: 20px;
+		 display: grid;
+		 align-content: center;
+		 justify-items: center;
+		 gap: 20px;
+		 color: beige;
+		 }
+		 #subscribe div{
+			 max-width: 80%;
+			 display: flex;
+		 }
+		 #subscribe p{
+			 text-align: center;
+			 width: 80%;
+		 }
+		 #subscribe button{
+			 background-color: rgb(0, 131, 161);
+			 padding: 15px 36px;
+			 font-size: 1rem;
+		 font-weight: bold;
+		 font-family: sans-serif;
+		 text-transform: uppercase;
+		 border: 0;
+		 border-radius: 0 5px 5px 0;
+		 cursor: pointer;
+		 }
+		 #subscribe input{
+		 padding-left: 10px;
+		 background-color: white;
+		 font-size: 1rem;
+		 font-weight: bold;
+		 border: 0;
+		 border-radius: 10px 0 0 10px;
+		 outline: none;
+		 }
+		 #services{
+			 padding: 40px 80px;
+			 background-color: #ddd;
+		 }
+		 #services > p{
+			 text-align: center;
+			 color: #888;
+			 margin-top: 20px;
+		 }
+		 #services article{
+			 display: flex;
+			 gap: 20px;
+			 margin-top: 30px;
+		 }
+		 #services article > div{
+			 background-color: white;
+			 border-radius: 10px;
+			 padding: 40px 30px;
+		 }
+		 #services div .fa{
+			 font-size: 2.5rem;
+			 margin-bottom: 20px;
+			 position: relative;
+			 z-index: 1;
+		 }
+		 #services div p{
+			 margin: 20px 0;
+			 text-align: justify;
+			 line-height: 150%;
+		 }
+		 #services div a{
+		   color: rgba(0, 131, 116,0.85);
+		   position: relative;
+		   
+		 }
+		 #services div span::after{
+			 display: inline-block;
+			 content: "";
+			 height: 60px;
+			 width: 60px;
+			 background-color: rgb(143, 143, 185);
+			 border-radius: 50%;
+			 position: relative;
+		   left: -40px;
+		   }
+		   #services div h2::after{
+			 content: "";
+			 display: block;
+			  background-color: #ccc;
+			  width: 100%;
+			  height: 3px;
+			  margin-top: 10%;
+		 }
+		 #services h2{
+			 width: fit-content;
+		 }
+		 #services div:hover span::after , #services div:hover h2::after{
+			 background-color: rgba(0, 131, 116,0.6);
+			 transition: 1s;
+		 }
+		 #testimonial{
+			 padding: 40px 80px;
+			 text-align: justify;
+			 margin: 20px;
+		 }
+		 #testimonial > p{
+			 text-align: center;
+			 margin-top: 20px;
+		 }
+		 #testimonial article{
+			 display: flex;
+			 gap: 20px;
+			 margin-top: 30px;
+		 }
+			#testimonial #quote{
+				color: gold;
+		 }
+		 #testimonial  article > div{
+			 background-color: white;
+			 padding: 40px 30px;
+			 border-radius: 10px;
+			 box-shadow:0 0 15px 5px rgba(0, 0, 0, 0.6);
+		 }
+		 #testimonial img{
+			 width: 70px;
+			 height: 70px;
+			 border-radius: 50%;
+		 }
+		 #testimonial .header{
+			 display: flex;
+			 gap: 15px;
+			 align-items: center;
+		 }
+		 #testimonial .header i{
+			 color: rgb(255,193,7);
+		 }
+		 #testimonial .header p{
+			 margin: 6px 0;
+		 }
+		 #testimonial #last-p{
+			text-align: justify;
+			line-height: 150%;
+		 }
+		 #testimonial .card > p{
+				margin-top: 17px;
+		 }
+		 #team{
+		 padding: 40px 80px;
+		 background-color: #eee;
+		 }
+		 #team > p{
+		 text-align: center;
+		 margin-top: 20px;
+		 }
+		 #team article{
+		 display: flex;
+		 gap: 20px;
+		 margin-top: 30px;
+		 justify-content: center;
+		 }
+		 #team article > div{
+			 flex-basis: 20%;
+		 border-radius: 15px;
+		 background-color: #ffffff;
+		 padding: 15px;
+		 box-shadow:0 0 10px ;
+		 padding: 15px;
+		 text-align: center;
+		 
+		 }
+		 #team div img{
+			 width: 100%;
+			 border-radius: 15px;
+		 
+		 }
+		 #team .social{
+			 display: flex;
+			 justify-content: space-evenly;
+			 gap:20px;
+		 }
+		 #team h2 ,p{
+			 text-align: center;
+			 padding: 5px 5px;
+		 }
+		 
+		 #contact{
+			 padding: 40px 80px;
+			 }
+			 #contact > p{
+			 text-align: center;
+			 margin-top: 20px;
+			 }
+			 #contact a{
+				text-decoration: none;
+				color: white;
+				transition: 0.7s;
+			 }
+			 #contact a:hover{
+				color: blue;
+			 }
+			 #contact article{
+			 display: flex;
+			 margin-top: 65px;
+			 justify-content: center;
+				box-shadow: 0 0 10px;
+				border-radius: 5px;
+			 }
+			 #contact .col{
+				 flex-basis: 35%;
+				 background-color: rgb(0, 131, 116);
+				 padding-top: 15px;
+			 }
+			 #contact .form-container{
+				 flex-basis: 70%;
+			  
+			 }
+			 .col p{
+				 text-align: start;
+			 }
+			 #contact .card{
+			 margin-bottom: 15px;
+			 background-color: rgb(6, 201, 176);
+			 margin-left:20px ;
+			 margin-right:20px ;
+			 padding: 15px ;
+			 color: whitesmoke;
+			  border-radius: 5px;
+			 display: flex;
+			 gap: 20px;
+			 }
+			 #contact .card span{
+				 background-color: #eeeeee35;
+				 display: grid;
+				 width: 40px;
+				 height: 40px;
+				 border-radius: 50%;
+				 justify-content: center;
+				 align-items: center;
+			 }
+			 #contact .card h3{
+		 margin-bottom: 10px;
+			 }
+		 
+		 #contact form{
+		 padding: 25px;
+		 padding-top: 40px;
+		   }
+		 
+		  #contact input,
+		  #contact textarea{
+		 width: 100%;
+		 padding: 5px 12px;
+		 font-size: 1.2rem;
+		 margin-bottom: 25px;
+		 }
+		 
+		 #contact .input-container{
+			 display: flex;
+			 gap: 25px;
+			 
+		 }
+		 #contact .btn{
+			 margin-left: auto;
+			 margin-right: auto;
+			 width: fit-content;
+			 cursor: pointer;
+			 border: none;
+		 }        
+		 footer{
+			 padding: 40px 80px;
+			 background-color: rgb(0, 131, 116);
+			color: white;
+			 }    
+			 footer section{
+				 display: flex;
+				 flex-wrap: wrap;
+				 color: white;
+				 gap: 20px;
+				 
+			 }
+		 footer a{
+			 color: white;
+		 }
+		 footer a:hover{
+			 text-decoration: underline;
+		 }
+		 footer p{
+			 text-align: start;
+			 line-height: 150%;
+		 }
+		 footer article:first-child{
+			 flex-basis: 40%;
+		 }
+		 footer article:first-child > p{
+			 margin-top: 10px;
+			 margin-bottom: 20px;
+		 }
+		 footer article:nth-child(2){
+			 display: flex;
+		 }
+		 footer article:nth-child(2) div{
+			 flex-basis: 33.3%;
+		 }
+		 footer article:nth-child(2) li{
+			margin-top: 15px;
+		 }
+		 footer > div{
+			 flex-basis: 100%;
+			 text-align: center;
+		 }
+		 footer .contactw{
+			 margin-bottom: 15px;
+		 }
+		 footer .address{
+			 margin-bottom: 15px;
+		 }
+		 footer .phone{  
+		 margin-bottom: 6px;
+		 }
+		 footer article:nth-child(2) input[type=checkbox]{
+			display: none;
+		}
+		footer article:nth-child(2) i{
+			display: none;
+		}
+		 @media screen and (max-width:985px){
+			 #hero{
+				 flex-direction: column-reverse;
+				 justify-items: center;
+			 }
+			 #hero article{
+				 width: 80%;
+			 }
+			 #hero p{
+				text-align: justify;
+			 }
+			 #hero #first{
+				text-align: center;
+			 }
+			 #hero #first p, .btn{
+				margin-left: auto;
+				 margin-right: auto;
+			 }
+			 header ul{
+				 background-color: rgb(0, 131, 116);
+				 display: grid;
+				 position: fixed;
+				 right: -55%;
+				 top: 0;
+				 width: 50%;
+				 justify-content: center;
+				 height: 100%;
+				 z-index: 10;
+				 text-align: center;
+				 align-items: center;
+				 transition: 1s;
+			 }
+			 header .fa-bars{
+				 display: block;
+				 cursor: pointer;
+			 }
+			 #subscribe p{
+				text-align: justify;
+				line-height: 150%;
+				font-size: 130%;
+			 }
+			 #about article{
+				 flex-direction: column;
+				 gap: 40px;
+			 }
+			 #about p{
+				text-align: justify;
+				line-height: 150%;
+				font-size: 130%;
+			 }
+			 header ul .fa-close{
+				 display: block;
+				 font-size: 2rem;
+				 color: white;
+				 cursor: pointer;
+			 }
+			 #services article{
+				 flex-direction: column;
+				 margin-left: auto;
+				margin-right: auto;
+			 }
+			 #services p{
+				text-align: justify;
+				line-height: 150%;
+				font-size: 130%;
+			 }
+			 #testimonial article{
+				 flex-direction: column;
+			 }
+			 #testimonial p{
+				text-align: justify;
+				line-height: 150%;
+				font-size: 130%;
+			 }
+			 #team article{
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 20px;
+			}
+			#team p{
+				text-align: center;
+				line-height: 150%;
+				font-size: 130%;
+			}
+			#team .social{
+				display: flex;
+				justify-content: center;
+				gap:15px;
+			}
+			footer section{
+				flex-direction: column;
+			}
+			footer p{
+				text-align: justify;
+			}
+		 }
+		 @media screen and (max-width:864px) {
+			#contact article{
+				flex-direction: column;
+			}
+		 }
+		 @media screen and (max-width:666px) {
+			header{
+				width: 100%;
+			}
+			#hero{
+				width: 100%;
+			}
+			#about{
+				padding: 40px 10px;
+			}
+			#subscribe{
+				width: 95%;
+			}
+			#subscribe div{
+				max-width: 80%;
+				display: flex;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#subscribe p{
+				width: 90%;
+			}
+			#testimonial p{
+				font-size: 110%;
+			 }
+			 #subscribe button{
+				width: 100%;
+			}
+			#subscribe input{
+				width: 100%;
+			}
+			#team{
+				padding:40px 10px;
+			}
+			#team article{
+				flex-direction: column;
+				display: flex;
+				width: 95%;
+				margin-left: auto;
+				margin-right: auto;
+				gap: 40px;
+			}
+			#team .social{
+				gap:40px;
+			}
+			#services{
+				padding:40px 10px;
+			}
+			#services  article{
+				width: 95%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#testimonial{
+				padding:40px 10px;
+				margin: 0;
+			}
+			#testimonial  article{
+				width: 95%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#contact{
+				padding:40px 10px;
+			}
+			#contact article{
+				width: 95%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			footer{
+				padding: 40px 15px;
+			}
+			footer section{
+				flex-direction: column;
+			}
+		 }
+		 @media screen and (max-width:530px) {
+			#subscribe div{
+				max-width: 90%;
+				flex-direction: column;
+				gap: 5px;
+				height: fit-content;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#subscribe p{
+				font-size: 120%;
+				line-height: 130%;
+			}
+			#subscribe input{
+				border-radius: 10px;
+				height: 40px;
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#subscribe button{
+			border-radius: 5px;
+			width: 100%;
+			margin-top: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			}
+			#services div p{
+				line-height: 130%;
+				font-size: 120%;
+			 }
+			#testimonial #last-p{
+				line-height: 130%;
+			 }
+			#team .social{
+				gap: 20px;
+			}
+			#contact .input-container{
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+			}
+			footer article{
+				display: flex;
+				flex-direction: column;
+				gap: 40px;
+			}
+			footer article:nth-child(2) input[type=checkbox]{
+				display: none;
+			}
+			footer article:nth-child(2) h3{
+				cursor: pointer;
+			}
+			footer article:nth-child(2) ul{
+				display: none;
+			}
+			footer article:nth-child(2) #tick1:checked ~ ul{
+				display: block;
+			}
+			footer article:nth-child(2) #tick2:checked ~ ul{
+				display: block;
+			}
+			footer #display-ul{
+				display: none;
+			}
+			footer article:nth-child(2) #tick3:checked ~ #display-ul{
+				display: block;
+			}
+			footer article:nth-child(2) i{
+				display: block;
+			}
+			footer article:nth-child(2) h3{
+				display: flex;
+				gap: 6px;
+			}
+			footer p{
+				line-height: 150%;
+			}
+		}
+		@media screen and (max-width:380px) {
+			/* #about p, #hero p, #services p, footer article p{
+				line-height: 150% !important;
+				 word-spacing: -4px !important;
+				 color: blue;
+			}
+			#subscribe p{
+				word-spacing: -1%;
+			} */
+			header ul{
+				right: -100%;
+				width: 100%;
+			}
+		}
+		@media screen and (max-width:330px) {
+			#hero{
+				padding: 40px 10px;
+			}
+			#hero article{
+				width: 95%;
+			}
+			#services{
+				padding: 40px 0;
+			}
+			#testimonial{
+				padding:40px 0px;
+			}
+			#team{
+				padding:40px 0;
+			}
+			#contact{
+				padding: 40px 0;
+			}
+			#contact .card{
+				gap: 15px;
+			}
+			#contact #small{
+				font-size: 80%;
+			}
+		}
+		@media screen and (max-width:280px) {
+			#hero article{
+				width: 98%;
+			}
+			#contact #small{
+				font-size: 60%;
+				font-weight: bold;
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- header -->
+	<header>
+		<a href="#" class="brand">Impact</a>
+		<nav>
+			<ul id="openNav">
+				<i class="fa fa-close" id="closeBar" title="Close nav bar"></i>
+				<li><a href="#" id="nav1">Home</a></li>
+				<li><a href="#about" id="nav2">About</a></li>
+				<li><a href="#services" id="nav3">Services</a></li>
+				<li><a href="#team" id="nav4">Team</a></li>
+				<li><a href="#contact" id="nav5">Contact</a></li>
+			</ul>
+			<i class="fa fa-bars" id="bar" title="Open nav bar"></i>
+		</nav>
+	</header>
+	<!-- section -->
+	<section id="hero">
+		<article id="first">
+			<h1>Welcome to Impact</h1>
+			<p>At Impact, we believe that every action, no matter how small, has the potential to create a ripple effect that can bring about significant change.</p>
+			<a href="#" class="btn">Get Started</a>
+		</article>
+		<article>
+			<img src="images/hero-img.svg" width="100%">
+		</article>
+	</section>
+	<!-- about -->
+	<section id="about" class="reveal">
+		<h1>About Us</h1>
+		<p>
+            We believe that a small group of passionate people is all it takes to Create impact.com. We are not satisfied with the status quo. We are not satisfied with business as usual. We are not satisfied with anything less than greatness.
+        </p>
+		<article>
+			<div>
+				<img src="images/team.jpg">
+			</div>
+			<div>
+				<ul>
+					<li>We are reliable</li>
+					<li>We offers 24/7 support to our customers </li>
+					<li>Our servcies are affordable</li>
+				</ul>
+				<p>
+                    We believe that growth drives happiness, and so we aim to perform at our highest level and inspire our teammates to do the same. We develop the balance necessary to sustain that peak performance knowing it is as valuable as the work itself. This is how we create a culture that attracts, keeps, and grows amazing people.
+                </p>
+			</div>
+		</article>
+	</section>
+	<!-- subscribe -->
+	<section id="subscribe" class="reveal">
+		        <p>
+                Subscribe so that you will be the first person to receive our notification. 
+            </p>
+                <form action="#">
+				<div>
+					<input type="email" placeholder="Enter your email" required>
+					<button>Subscribe</button>
+				</div>
+            </form>
+	</section>
+	<!-- services -->
+	<section id="services" class="reveal">
+		<h1>Our Services</h1>
+		<p>
+            We are best in designs. We are transformational. We are Growth Technologists. And we Create Impact.
+        </p>
+		<article>
+			<div>
+				<span>
+				<i class="fa fa-code"></i>
+				</span>
+				<h2>Web Design</h2>
+				<p>Web design and development is an umbrella term that describes the process of creating a website. Like the name suggests, it involves two major skill sets: web design and web development. Web design determines the look and feel of a website, while web development determines how it functions. we create and design websites.</p>
+		        <a href="#">Read more</a>
+			</div>
+				<div>
+					<span>
+				<i class="fa fa-crop-alt"></i>
+				</span>
+				<h2>UI/UX Design</h2>
+				<p>User interface (UI) design refers to the aesthetic elements by which people interact with a product, such as buttons, icons, menu bars, typography, colors, and more. User experience (UX) design refers to the experience a user has when interacting with a product. we create UI/UX Design</p>
+		        <a href="#">Read more</a>
+			</div>
+			<div>
+				<span>
+				<i class="fa fa-pen"></i>
+				</span>
+				<h2>Graphic Design</h2>
+				<p>Graphic design is the creation of visual compositions to solve problems and communicate ideas through typography, imagery, color and form. There's no one way to do that, and that's why there are several types of graphic design, each with their own area of specialization. we create graphic designs.</p>
+		        <a href="#">Read more</a>
+			</div>
+		</article>
+			</section>
+			<!-- testimonial -->
+	<section id="testimonial" class="reveal">
+			<h1>Testimonials</h1>
+		    <p>
+                Impact testimonial is a combination of prominent and popular people that have make a name around the world.</p>
+		<article>
+			<div class="card">
+				<div class="header">
+					<img src="images/testimonial1.jpg">
+					<aside>
+						<h3>Sara Wilson</h3>
+						<p>Designer</p>
+						<span>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</span>
+					</aside>
+
+					
+   
+
+					</div>
+					<p id="last-p"> 				
+						<i class="fas fa-quote-left" id="quote"></i> Sara Wilson is a web designer, web developer, and an assistant researcher at MIT. She is a passionate advocate for web standards and one of the few “Invited Experts” in the W3C CSS Working group. <i class="fas fa-quote-right" id="quote"></i>
+            </p>
+				</div>
+				<div class="card">
+				<div class="header">
+					<img src="images/testimonial2.jpg">
+					<aside>
+						<h3>John Morgan</h3>
+						<p>Manager</p>
+						<span>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</span>
+					</aside>
+					</div>
+					<p id="last-p">
+                        <i class="fas fa-quote-left" id="quote"></i> John Morgan is an Italian professional football manager and former player who is the manager of Real Madrid. Nicknamed "Don Carlo", he is regarded as one of the greatest managers of all time. <i class="fas fa-quote-right" id="quote"></i>
+            </p>
+				</div>
+				<div class="card">
+				<div class="header">
+					<img src="images/testimonial3.jpg">
+					<aside>
+						<h3>Jude Ben</h3>
+						<p>Developer</p>
+						<span>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</span>
+					</aside>
+					</div>
+					<p id="last-p"> <i class="fas fa-quote-left" id="quote"></i> Jude Ben is a Finnish software engineer who is the creator and lead developer of the Linux kernel, used by Linux distributions like Debian, Arch and Android. He also created the distributed version control system Git. <i class="fas fa-quote-right" id="quote"></i></p>
+				</div>
+		</article>
+	</section>
+	<section id="team" class="reveal">
+		<h1>Our Team</h1>
+		<p>Our team is made up of very prominent persons, such like web designers, accountant and content creator.</p>
+		<article>
+			<div>
+				<img src="images/team-1.jpg">
+				<h2>Walter White</h2>
+				<p>Web Designer</p>
+				<nav class="social">
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</nav>
+			</div>
+			<div>
+				<img src="images/team-2.jpg">
+				<h2>Sarah Jhinson</h2>
+				<p>Marketing</p>
+				<nav class="social">
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</nav>
+			</div>
+			<div>
+				<img src="images/team-3.jpg">
+				<h2>William Anderson</h2>
+				<p>Content</p>
+				<nav class="social">
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</nav>
+			</div>
+			<div>
+				<img src="images/team-4.jpg">
+				<h2>Amanda Jepson</h2>
+				<p>Accountant</p>
+				<nav class="social">
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</nav>
+			</div>
+
+		</article>
+        </section>
+        <!-- contact-->
+        <section id="contact" class="reveal">
+        	<h1>Contact</h1>
+        	<p>You can reach out to us through the following medium</p>
+        	<article>
+        		<div class="col">
+        			<div class="card">
+						<span>
+        				<i class="fa fa-location-dot"></i>
+                        </span>
+        				<aside>
+        					<h3>Location:</h3>
+        					<p>
+                                <a href href="https://www.google.com/maps/place/Ny+State+Rest+Area,+Sheridan,+NY+14136,+USA/@42.5385959,-79.2167038,17z/data=!3m1!4b1!4m6!3m5!1s0x89d2d06f77f55e9f:0x7050d8b94799da6a!8m2!3d42.538592!4d-79.2141289!16s%2Fg%2F1tx8v5q2?entry=ttu" id="small">
+                                A108 Adam Street, New York, NY 535022
+                                </a>
+                            </p>
+        				</aside>
+        			</div>
+        			<div class="card">
+						<span>
+        				<i class="fa fa-envelope"></i>
+						</span>
+        				<aside>
+        					<h3>Email:</h3>
+        					<p>
+                                <a href="mailto:eeze09140@gmail.com" id="small">
+                                    eeze09140@gmail.com
+                                </a>
+                            </p>
+        				</aside>
+        			</div>
+        			<div class="card">
+						<span>
+        				<i class="fa fa-mobile"></i>
+						</span>
+        				<aside>
+        					<h3>Call:</h3>
+        					<p>
+                                <a href="tel:09023130113" id="small">
+                                +243 9023130113
+                            </a>
+                            </p>
+        				</aside>
+        			</div>
+        			<div class="card">
+						<span>
+        				<i class="fa fa-clock"></i>
+                        </span>
+        				<aside>
+        					<h3>Open Hours:</h3>
+        					<p id="small">Mon-Sat: 11AM-23PM</p>
+        				</aside>
+        			</div>
+        		</div>
+        		<div class="form-container">
+        			<form action="#">
+        				<div class="input-container">
+        					<input type="text" placeholder="Your Name" required>
+        					<input type="email"  placeholder="Your Email" required>
+        				</div>
+        				<input type="text" placeholder="Subject" required>
+        				<textarea cols="20" rows="6" placeholder="Message" required></textarea>
+        				<button class="btn">Send Message</button>
+        			</form>
+        		</div>
+        	</article>
+        </section>
+
+		
+        <footer class="reveal">
+			<section>
+        	<article>
+        		<a href="#" class="brand">Impact</a>
+        		<p>
+                    We believe in the power of science and technology to create transformational growth: in our customers, in our company, and in ourselves. And we are in business to create impact through partnerships.
+                </p>
+        		<nav class="social">
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</nav>
+        	</article>
+        	<article>
+        		<div>
+                    <label for="tick1" id="lab1">
+        			<h3>Useful Links <i class="fa fa-angle-down"></i></h3>
+                </label>
+                    <input type="checkbox" id="tick1">
+        			<ul>
+        				<li><a href="#hero">Home</a></li>
+        				<li><a href="#about">About Us</a></li>
+        				<li><a href="#services">Services</a></li>
+        				<li><a href="#">Terms of Service</a></li>
+        				<li><a href="#">Privacy Policy</a></li>
+        			</ul>
+        		</div>
+        		<div>
+                    <label for="tick2">
+        			<h3>Our Services <i class="fa fa-angle-down"></i></h3>
+                </label>
+                <input type="checkbox" id="tick2">
+        			<ul>
+        				<li><a href="#">Web Design</a></li>
+        				<li><a href="#">Web Development</a></li>
+        				<li><a href="#">Product Manager</a></li>
+        				<li><a href="#">Marketing</a></li>
+        				<li><a href="#">Graphic Design</a></li>
+        			</ul>
+        		</div>
+        		<div>
+                    <label for="tick3">
+        			<h3 class="contact">Contact Us <i class="fa fa-angle-down"></i></h3>
+                </label>
+                <input type="checkbox" id="tick3">
+                <div id="display-ul">
+        			<p>
+                        <a href="https://www.google.com/maps/place/Ny+State+Rest+Area,+Sheridan,+NY+14136,+USA/@42.5385959,-79.2167038,17z/data=!3m1!4b1!4m6!3m5!1s0x89d2d06f77f55e9f:0x7050d8b94799da6a!8m2!3d42.538592!4d-79.2141289!16s%2Fg%2F1tx8v5q2?entry=ttu">
+                            A108 Adam Street, New York, NY 535022 United States
+                        </a>
+                    </p>
+        			<p class="phone"><span>Phone:
+
+					</span><a href="tel:+123 9123130113">+123 9123130113</a></p>
+				<p><span>Email:</span><a href="mailto:eeze091140@gmail.com">
+                    eeze091140@gmail.com</a></div></p>
+                    </div>
+        		</div>
+        	</article>
+			<div>
+        	<p>&copy; Copyright <b>Impact.</b> All Rights Reserved</p>
+		<p>Designed by Eze Ebube M.D</p>
+		</div>
+        </section>	
+        </footer>
+</body>
+<script>
+	let bar = document.getElementById("bar");
+	let nav = document.getElementById("openNav");
+	let closeBar = document.getElementById("closeBar");
+    let cnav1 = document.getElementById("nav1");
+    let cnav2 = document.getElementById("nav2");
+    let cnav3 = document.getElementById("nav3");
+    let cnav4 = document.getElementById("nav4");
+    let cnav5 = document.getElementById("nav5");
+	bar.onclick = function () {
+		nav.style.right = "0";
+	}
+	closeBar.onclick = function () {
+		nav.style.right = "-100%";
+	}
+	cnav1.onclick = function () {
+		nav.style.right = "-100%";
+	}
+	cnav2.onclick = function () {
+		nav.style.right = "-100%";
+	}
+	cnav3.onclick = function () {
+		nav.style.right = "-100%";
+	}
+	cnav4.onclick = function () {
+		nav.style.right = "-100%";
+	}
+	cnav5.onclick = function () {
+		nav.style.right = "-100%";
+	}
+	function reveal() {
+		var reveals = document.querySelectorAll(".reveal");
+	  
+		for (var i = 0; i < reveals.length; i++) {
+		  var windowHeight = window.innerHeight;
+		  var elementTop = reveals[i].getBoundingClientRect().top;
+		  var elementVisible = 150;
+	  
+		  if (elementTop < windowHeight - elementVisible) {
+			reveals[i].classList.add("active");
+		  } else {
+			reveals[i].classList.remove("active");
+		  }
+		}
+	  }
+	  
+	  window.addEventListener("scroll", reveal);
+</script>
+</html>
