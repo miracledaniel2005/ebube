@@ -1,0 +1,109 @@
+ <!Doctype html>
+<html>
+<head>
+<title>calculator</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+overflow:hidden;
+background-color:whitesmoke;
+}
+input[type="button"]{
+    font-size:200%;
+    padding:5%;
+    background-color: whitesmoke;
+    border:hidden;
+    width:165px;
+}
+input[type="button"]:hover{
+    background-color:white;
+}
+input[type="text"]{
+    font-size: 50px;
+    text-align: right;
+    margin-top: -10px;
+    margin-left:-142%;
+    width:232%;
+    height: 100px;
+    background-color: whitesmoke;
+    border:hidden;
+    cursor: default;
+}
+input[type="text"]:hover{
+    background-color:whitesmoke;
+}
+input[type="text"]:focus{
+    outline: 0;
+}
+#plus-minus{
+    margin-left: -0%;
+}
+#sty:hover{
+    background-color:rgb(0, 128, 109);
+}
+@media screen and (max-width:700px) {
+    input[type="button"]{
+    font-size:200%;
+    padding:3%;
+    background-color: whitesmoke;
+    border:hidden;
+    width:100px;
+    }
+}
+</style>
+</head>
+<body>
+    <i class="fa fa-calculator fa-5x" id="cal"></i>
+    <br>
+    <br>
+<form name="calculator">
+    <center>
+<table>
+<tr>
+<td>
+<input type="text"name="text"id="input">
+</td>
+</tr>
+<tr>
+<td>
+    <div class="num-btn">
+<input type="button"name="clear"value="  CE "id="clear1"onclick="calculator.input.value=''">
+<input type="button"name="clear"value="  C "id="clear2"onclick="calculator.input.value=''">
+<input type="button"name="backspace"value="DEL"onclick="del()">
+<input type="button"name="div"value="&divide;"id="sty"onclick="calculator.input.value+='/'">
+<br>
+<input type="button"name="seven"value="7"onclick="calculator.input.value+='7'">
+<input type="button"name="eight"value="8"onclick="calculator.input.value+='8'">
+<input type="button"name="nine"value="9"onclick="calculator.input.value+='9'">
+<input type="button"name="mul"value="&times;"id="sty"onclick="calculator.input.value+='*'">
+<br>
+<input type="button"name="four"value="4"onclick="calculator.input.value+='4'">
+<input type="button"name="five"value="5"onclick="calculator.input.value+='5'">
+<input type="button"name="six"value="6"onclick="calculator.input.value+='6'">
+<input type="button"name="minus"value="-"id="sty"onclick="calculator.input.value+='-'">
+<br>
+<input type="button"name="one"value="1"onclick="calculator.input.value+='1'">
+<input type="button"name="two"value="2"onclick="calculator.input.value+='2'">
+<input type="button"name="three"value="3"onclick="calculator.input.value+='3'">
+<input type="button"name="add"value="+"id="sty"onclick="calculator.input.value+='+'">
+<br>
+<input type="button"name="plus-minus"value="+/-"id="plus-minus"onclick="calculator.input.value=-(calculator.input.value)">
+<input type="button"name="zero"value="0"id="zero"onclick="calculator.input.value+='0'">
+<input type="button"name="dolt"value="."onclick="calculator.input.value+='.'">
+<input type="button"name="Dolt"value="="id="sty"onclick="calculator.input.value=eval(calculator.input.value)">
+<br>
+</div>
+</td>
+</tr>
+</table>
+</center>
+</form>
+</body>
+<script>
+ function del()  
+{  
+var input = document.getElementById("input").value;  
+document.getElementById("input").value=input.substring(0, ebube.length -1);
+}  
+</script>
+</html>
