@@ -83,6 +83,7 @@ header button {
 header button:hover {
     background-color: rgb(0, 113, 128);
     color: white;
+    border: none;
 }
 header nav ul #btn {
     display: none;
@@ -364,7 +365,6 @@ input[type=checkbox] {
 #subscribe {
     background-color: white;
     padding: 96px 40px;
-    /* padding: 20px 40px; */
     display: grid;
     align-items: center;
     height: 87.6vh;
@@ -423,7 +423,6 @@ input[type=checkbox] {
 #gallery {
     background-color: #dddddd;
     padding: 100px 40px;
-    /* padding: 20px 40px; */
 }
 #gallery > h1 {
     text-align: center;
@@ -659,12 +658,13 @@ input[type=checkbox] {
 }
 footer {
         background-color: rgb(212, 212, 10);
-        padding: 100px 40px;
+        padding: 100px 0;
 }
 footer main {
     display: flex;
     gap: 40px;
     justify-content: center;
+    padding: 20px 0;
 }
 footer main .sect1 {
     padding: 20px;
@@ -676,6 +676,9 @@ footer main .sect1 #topic {
     text-align: center;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
+}
+footer main .sect1 #topic h1 {
+    font-size: 150%;
 }
 footer main .sect1 #topic #title-small {
     font-size: 80%;
@@ -789,6 +792,25 @@ footer main .sect2 article span li {
     padding: 10px 0;
     list-style: none;
 }
+.line {
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+.copyright {
+    background-color: rgb(212, 212, 10);
+    padding: 50px 0;
+    text-align: center;
+    display: grid;
+    gap: 15px;
+    align-items: center;
+}
+.copyright :last-child {
+    font-weight: bold;
+}
+.copyright p {
+    line-height: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 @media screen and (min-width:1120px) {
@@ -844,6 +866,8 @@ footer main .sect2 article span li {
         width: 100%;
     }
 }
+
+
 @media screen and (max-width:1120px) {
     header .fa-bars {
         display: block;
@@ -870,13 +894,12 @@ footer main .sect2 article span li {
     right: -200%;
     top: 0;
     width: 40%;
-    justify-items: center;
+    justify-items: center !important;
     height: 100%;
-    text-align: center;
+    text-align: center !important;
     align-items: center;
     transition: 1s;
-    min-width: 370px;
-    overflow-x: auto;
+    overflow-Y: auto;
     padding-bottom: 10px;
    }
    header nav #all-ul li {
@@ -910,8 +933,8 @@ header nav ul li ul li a:hover {
 }
    header button {
     display: none;
-   }
-   header nav ul #btn {
+}
+header nav ul #btn {
     display: block;
 }
 header nav ul #btn::after {
@@ -922,3 +945,267 @@ header nav ul #btn::after {
     animation: shift 1.5s infinite alternate 0s;
 }
 }
+@media screen and (max-width:1030px) {
+footer {
+    padding: 20px;
+}
+footer main {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+footer main .sect1 #topic {
+    text-align: start;
+}
+footer main .sect1 form {
+    justify-content: start;
+    margin-right: 0;
+    margin-left: 0;
+}
+footer main .sect1 .social {
+    justify-content: start;
+}
+footer main .sect2 {
+    flex-direction: column;
+    gap: 20px;
+}
+footer main .sect2 article {
+    flex-direction: column;
+    gap: 10px;
+}
+}
+@media screen and (max-width:1163px) {
+    #team main {
+        flex-wrap: wrap;
+    }
+    #team article {
+        flex-basis: 35%;
+    }
+    #gallery article p {
+        font-size: 140%;
+    }
+}
+    @media screen and (max-width:950px) {
+        #about article {
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+            height: auto;
+        }
+        #about .about-img {
+            width: 100%;
+            height: 500px;
+        }
+        #about .about-text {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:1125px) {
+        #hero {
+            height: 100vh;
+        }
+    }
+    @media screen and (max-width:870px) {
+        #gallery main {
+            flex-direction: column;
+            height: fit-content;
+        }
+        #gallery .slider {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #gallery .slider .slide img {
+            width: 100%;
+        }
+        #gallery article {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 65px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #subscribe article {
+            width: 95%;
+            padding: 40px;
+        }
+    }
+    @media screen and (max-width:825px) {
+        #contact main {
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width:733px) {
+        #subscribe {
+            height: 100%;
+        }
+        #subscribe article {
+            width: 95%;
+        }
+        footer {
+            padding: 0px;
+        }
+    }
+    @media screen and (max-width:600px) {
+        header nav #all-ul {
+            width: 70%;
+        }
+        #gallery {
+            padding: 100px 5px;
+        }
+         #gallery main {
+            padding: 5px;
+        }
+        #gallery .slider {
+            width: 100%;
+        }
+        #gallery article {
+            width: 100%;
+        }
+        footer main {
+            padding: 10px 0;
+        }
+        footer main .sect1 form {
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+        footer main .sect1 form input[type=email] {
+            border-radius: 10px;
+        }
+        footer main .sect1 form button {
+            border-radius: 8px;
+        }
+        footer main .sect1 .social {
+            gap: 10px;
+        }
+        footer main .sect1 .social .fa {
+            border-radius: 60px;
+            font-size: 140%;
+        }
+    }
+    @media screen and (max-width:680px) {
+        p {
+            font-size: 100% !important;
+        }
+    }
+    @media screen and (max-width:665px) {
+        #team main {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: 40px;
+        }
+        #team article img {
+            height: 450px;
+        }
+        #team article {
+            flex-basis: 35%;
+        }
+    }
+    @media screen and (max-width:575px) {
+        #about {
+            padding: 100px 10px;
+        }
+        #about .about-text ul li {
+            font-size: 110%;
+        }
+        #about .about-img {
+            width: 100%;
+        }
+        #about .about-text {
+            width: 100%;
+            padding: 20px 5px;
+        }
+        #subscribe {
+            padding: 96px 5px;
+            height: 87.6vh;
+        }
+        #subscribe article {
+            width: 95%;
+        }
+        #subscribe article form {
+            flex-direction: column;
+            gap: 10px;
+        }
+        #subscribe article form input[type=email] {
+            border-radius: 10px;
+            flex-basis: 40%;
+        }
+        #subscribe article form button {
+            border-radius: 8px;
+        }
+        footer main .sect1 .social .fa {
+            border-radius: 60px;
+            font-size: 140%;
+        }
+    }
+    @media screen and (max-width:550px) {
+        header {
+            padding: 10px;
+        }
+        header #title {
+            flex-direction: column;
+            gap: 1px;
+            font-size: 70%;
+            text-align: start !important;
+            justify-content: start;
+        }
+        #about .about-text ul li {
+            font-size: 100%;
+        }
+        #team article .social {
+            gap: 7px;
+        }
+        #team article .social .fa {
+            border-radius: 50px;
+            font-size: 120%;
+        }
+        #contact {
+            padding: 15px;
+        }
+        #contact main form .row1 {
+            flex-direction: column;
+        }
+        #contact main article aside span a {
+            font-size: 85%;
+        }
+        #contact main form .row1 input {
+            width: 100%;
+        }
+        
+    }
+    @media screen and (max-width:400px) {
+        #team article img {
+            height: 300px;
+        }
+    }
+    @media screen and (max-width:350px) {
+        header nav #all-ul {
+            width: 100%;
+        }
+        #contact main article aside span a {
+            font-size: 65%;
+        }
+    }
+    @media screen and (max-width:335px) {
+        #team article img {
+            height: 200px;
+        }
+    }
+    @media screen and (max-width:305px) {
+        #subscribe {
+            padding: 10px;
+        }
+        #subscribe article {
+            width: 100%;
+            padding: 40px 10px;
+        }
+        footer main .sect1 .social {
+            gap: 5px;
+        }
+        footer main .sect1 .social .fa {
+            border-radius: 0;
+            border: none;
+        }
+    }
