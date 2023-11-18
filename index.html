@@ -3,291 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my self webpage</title>
+    <title>Edufun Technik STEM HUB</title>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/edufun site.css">
 </head>
 <body>
-
-                    <!-- HEADER AND NAVIGTION MENU DESIGN -->
-
-    <header class="header">
-        <a href="#" class="logo">Miracle.<span class="animate" style="--i:1;"></span></a>
-
-        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-
-            <span class="active-nav"></span>
-            <span class="animate" style="--i:2;"></span>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png">
+            </a>
+        </div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav>
+            <ul class="nav-container">
+                <li><a href="#" class="active">Home</a></li>
+                <li id="display1">
+                    <a class="activate1" style="cursor: pointer;">About Us <i class='bx bx-chevron-down' id="icon1"></i></a>
+                    <ul class="hover">
+                        <span class="borderLine"></span>
+                            <div class="animate">
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Why Girls</a></li>
+                            <li><a href="#">Our Founder</a></li>
+                            <li><a href="#">Our Team</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li id="display2">
+                    <a class="activate2" style="cursor: pointer;">What We Offer <i class='bx bx-chevron-down' id="icon2"></i></a>
+                    <ul class="hover2">
+                        <span class="borderLine"></span>
+                        <div class="animate">
+                        <li><a href="#">Digital Marketting</a></li>
+                        <li><a href="#">Sofware Engeneering</a></li>
+                        <li><a href="#">Video Editing</a></li>
+                        <li><a href="#">Robotics for Kids</a></li>
+                        <li><a href="#">Coding for Kids</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li><a href="#">Special Programs</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <span class="active-nav"></span>
+            </ul>
         </nav>
     </header>
-
-                        <!-- HOME SECTION DESIGN -->
-
-    <section class="home show-animate" id="home">
-        <div class="home-content">
-            <h1>Hi, I'm <span>Miracle Daniel</span><span class="animate" style="--i:2;"></span></h1>
-            <div class="text-animate">
-                <h3>Frontend Developer<span class="animate" style="--i:3;"></span></h3>
-            </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum a quo atque ipsam animi exercitationem autem, blanditiis numquam tenetur possimus excepturi! Autem a veniam laborum consequuntur culpa.
-                <span class="animate" style="--i:4;"></span>
-            </p>
-
-            <div class="btn-box">
-                <a href="#" class="btn">Hire Me</a>
-                <a href="#" class="btn">Let's Talk</a>
-                <span class="animate" style="--i:5;"></span>
-            </div>
+    
+    <div class="banner">
+        <div class="text">
+            <h3>STEM EDUCATION PROGRAMS FOR KIDS</h3>
+            <br>
+            <h2>Empower your kids with the hot tech skills of the future</h2>
+            <br>
+            <p>We teach kids ages 4-18 to create games, mobile apps, websites, and write codes that control robots and more.</p>
+            <br>
+            <button class="btn"><a href="#">Download Our Curriculum</a></button>
         </div>
-
-        <div class="home-sci">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <span class="animate" style="--i:6;"></span>
-        </div>
-
-        <div class="home-imgHover"></div>
-        <span class="animate home-img" style="--i:7;"></span>
-    </section>
-
-                        <!-- ABOUT SECTION DESIGN -->
-
-    <section class="about" id="about">
-        <h2 class="heading">About <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-        <div class="about-img">
-            <img src="my self image/about.png">
-            <span class="circle-spin"></span>
-            <span class="animate scroll" style="--i:2;"></span>
-        </div>
-
-        <div class="about-content">
-            <h3>Frontend Developer<span class="animate scroll" style="--i:3;"></span></h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo sunt sed est quaerat voluptas, odit illum veniam nulla optio perferendis a, facilis ratione adipisci sapiente minima dolorem autem saepe ad enim. Non deleniti voluptatibus quod modi perferendis ea explicabo sequi? Eum quae facere assumenda eos iure tempora molestiae sequi illum.
-                <span class="animate scroll" style="--i:4;"></span>
-            </p>
-
-            <div class="btn-box btns">
-                <a href="#" class="btn">Read More</a>
-                <span class="animate scroll" style="--i:5;"></span>
+        <div class="background">
+            <div class="slider">
+                <img src="images/banner.jpg">
+                <img src="images/banner2.jpg">
+                <img src="images/banner3.jpg">
+                <img src="images/banner4.jpg">
+                <img src="images/banner5.jpg">
+                <img src="images/banner6.jpg">
             </div>
         </div>
-    </section>
+    </div>
 
-                      <!-- EDUCATION SECTION DESIGN -->
-
-    <section class="education" id="education">
-        <h2 class="heading">My <span>Journey</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-        <div class="education-row">
-            <div class="education-column">
-                <h3 class="title">Education<span class="animate scroll" style="--i:2;"></span></h3>
-
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="fa fa-calendar"></i> 2017 - 2018</div>
-                            <h3>Master Degree - University</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, corrupti? Accusantium, officia odio nihil obcaecati reiciendis repudiandae ex explicabo eveniet.</p>
-                        </div>
+    <section class="programs">
+        <h2>Our Programs</h2>
+        <div class="program-box">
+            <div class="content-box">
+                <span class="borderLine"></span>
+                <div class="animation">
+                    <img src="images/banner3.jpg">
+                    <div class="content">
+                        <h3>Coding for Kids</h3>
+                        <br>
+                        <p>We teach kids to program interactive stories, games, and animations.</p>
+                        <button><a href="#">LEARN MORE</a></button>
                     </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="fa fa-calendar"></i> 2018 - 2019</div>
-                            <h3>Master Degree - University</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, corrupti? Accusantium, officia odio nihil obcaecati reiciendis repudiandae ex explicabo eveniet.</p>
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="fa fa-calendar"></i> 2019 - 2020</div>
-                            <h3>Master Degree - University</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, corrupti? Accusantium, officia odio nihil obcaecati reiciendis repudiandae ex explicabo eveniet.</p>
-                        </div>
-                    </div>
-                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
+            </div>
+            <div class="content-box">
+                <span class="borderLine"></span>
+                <div class="animation">
+                    <img src="images/banner.jpg">
+                    <div class="content">
+                        <h3>Robotics for Kids</h3>
+                        <br>
+                        <p>Explore the world of robotics and learn how coding and robot design can solve both big and small problems.</p>
+                        <button><a href="#">LEARN MORE</a></button>
+                    </div>    
+                </div>
+            </div>
+            <div class="content-box">
+                <span class="borderLine"></span>
+                <div class="animation">
+                    <img src="images/banner2.jpg">
+                    <div class="content">
+                        <h3>Web Developer Bootcamp</h3>
+                        <br>
+                        <p>Learn to use HTML, CSS, and Javascript to create beautiful and fully functional websites.</p>
+                        <button><a href="#">LEARN MORE</a></button>
+                    </div>    
+                </div>
+            </div>
+            <div class="content-box">
+                <span class="borderLine"></span>
+                <div class="animation">
+                    <img src="images/banner6.jpg">
+                    <div class="content">
+                        <h3>Basic Computer Appreciation</h3>
+                        <br>
+                        <p>Master Computer Fundamentals , Windows 10, Microsoft Word, PowerPoint, Excel, Desktop Support, Basic Computer Skills.</p>
+                        <button><a href="#">LEARN MORE</a></button>
+                    </div>    
+                </div>
+            </div>
+            <div class="content-box">
+                <span class="borderLine"></span>
+                <div class="animation">
+                    <img src="images/banner4.jpg">
+                    <div class="content">
+                        <h3>Digital Marketing Bootcamp</h3>
+                        <br>
+                        <p>Learn use of various digital channels to market products and services in order to reach consumers.</p>
+                        <button><a href="#">LEARN MORE</a></button>
+                    </div>    
+                </div>
+            </div>
+            <div class="content-box">
+                <span class="borderLine"></span>
+                <div class="animation">
+                    <img src="images/banner5.jpg">
+                    <div class="content">
+                        <h3>Social Media Marketing Bootcamp</h3>
+                        <br>
+                        <p>Learn to leverage the power of popular social media networks to achieve your marketing and branding goals.</p>
+                        <button><a href="#">LEARN MORE</a></button>
+                    </div>    
                 </div>
             </div>
             
-            <div class="education-column">
-                <h3 class="title">Experience<span class="animate scroll" style="--i:5;"></span></h3>
+        </div>
+    </section>
 
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="fa fa-calendar"></i> 2017 - 2018</div>
-                            <h3>Web Developer - Company</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, corrupti? Accusantium, officia odio nihil obcaecati reiciendis repudiandae ex explicabo eveniet.</p>
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="fa fa-calendar"></i> 2018 - 2019</div>
-                            <h3>Web Developer - Company</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, corrupti? Accusantium, officia odio nihil obcaecati reiciendis repudiandae ex explicabo eveniet.</p>
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="fa fa-calendar"></i> 2019 - 2020</div>
-                            <h3>Web Developer - Company</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, corrupti? Accusantium, officia odio nihil obcaecati reiciendis repudiandae ex explicabo eveniet.</p>
-                        </div>
-                    </div>
-                    <span class="animate scroll" style="--i:6;"></span>
-
-                </div>
+    <section class="partners">
+        <h2>Our Amazing Partners</h2>
+        <div class="slider">
+            <div class="slide">
+                <img src="images/partner.png">
+                <img src="images/partner2.jpg">
+                <img src="images/partner3.png">
+                <img src="images/partner4.png">
+                <img src="images/partner5.png">
+                <img src="images/partner6.png">
+                <img src="images/partner8.jpg">
+                <img src="images/partner9.png">
+                <img src="images/partner10.png">
+                <img src="images/partner7.jpg">
             </div>
         </div>
     </section>
 
-                            <!-- SKILLS SECTION DESIGN -->
-
-    <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Coding Skills<span class="animate scroll" style="--i:2;"></span></h3>
-
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>HTML <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>CSS <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>JavaScript <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Python <span>50%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                    </div>
-
-                    <span class="animate scroll" style="--i:3;"></span>
-                </div>
-            </div>
-
-
-            <div class="skills-column">
-                <h3 class="title">Professional Skills<span class="animate scroll" style="--i:5;"></span></h3>
-
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>Web Design <span>95%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Web Development <span>67%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Graphic Design <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>SEO Marketting <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                    </div>
-                    <span class="animate scroll" style="--i:6;"></span>
-                </div>
-            </div>
+    <footer>
+        <div class="main">
+            <div class="box1">
+                <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png">
+            </a>
         </div>
-    </section>
-
-                      <!-- CONTACT SECTION DESIGN -->
-
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-        <form action="https://formsubmit.co/a55c90e5a94cd39eeb3a7cd5a2c925af" method="POST">
-            <input type="text" name="_honey" style="display:none;">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://miracledaniel2005.github.io/ebube/error.html">
-
-          <div class="input-box">
-            <div class="input-field">
-                <input type="text" name="Name" placeholder="Full Name" required>
-                <span class="focus"></span>
-            </div>
-            <div class="input-field">
-                <input type="email" name="Email" placeholder="Email Address" required>
-                <span class="focus"></span>
-            </div>
-
-            <span class="animate scroll" style="--i:3;"></span>
-          </div>
-
-          <div class="input-box">
-            <div class="input-field">
-                <input type="tel" name="Phone-number" placeholder="Mobile Number" required>
-                <span class="focus"></span>
-            </div>
-            <div class="input-field">
-                <input type="text" name="SUbject" placeholder="Email Subject" required>
-                <span class="focus"></span>
-            </div>
-
-            <span class="animate scroll" style="--i:5;"></span>
+        <div class="write-up">
+            <p>Edufun Technik delivers world-class immersive STEM education to kids and works to get more girls and young people into STEM careers.</p>
         </div>
-        
-        <div class="textarea-field">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-        <span class="focus"></span>
-
-        <span class="animate scroll" style="--i:7;"></span>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
     </div>
-
-    <div class="btn-box btns">
-        <button type="submit" class="btn">Submit</button>
-
-        <span class="animate scroll" style="--i:9;"></span>
+    <div class="box2">
+        <h2>Programs</h2>
+            <ul>
+                <li><a href="#">Digital Marketting</a></li>
+                <li><a href="#">Sofware Engeneering</a></li>
+                <li><a href="#">Video Editing</a></li>
+                <li><a href="#">Robotics for Kids</a></li>
+                <li><a href="#">Coding for Kids</a></li>
+            </ul>
+        </div>
+        <div class="box3">
+            <h2>About Us</h2>
+            <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Why Girls</a></li>
+                <li><a href="#">Our Founder</a></li>
+                <li><a href="#">Our Team</a></li>
+            </ul>
+        </div>
+        <div class="box4">
+            <h2>Get In Touch</h2>
+            <p>Location:</p>
+            <a href="#" target="_blank">Suite 4, Shoprite Mall, Park Rd, GRA, Onitsha</a>
+            <p>Email:</p>
+            <a href="mailto:info@edufuntechnik.com">info@edufuntechnik.com</a>
+            <p>Call:</p>
+            <a href="tel:+234 809 575 7722">+234 809 575 7722</a>
+        </div>
     </div>
-          </form>
-    </section>
-
-                         <!-- FOOTER DESIGN -->
-
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023 by miracle daniel | All Right Reserved.</p>
-
-            <span class="animate scroll" style="--i:1;"></span>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#" title="sroll back to top"><i class="fa fa-arrow-up"></i></a>
-
-            <span class="animate scroll" style="--i:3;"></span>
-        </div>
+    <div class="copyright">
+        <p>&copy; 2023 Edufun Technik. All Rights Reserved.</p>
+        <a href="#"><i class="fa fa-arrow-up"></i></a>
+    </div>
     </footer>
 
     <script src="script.js"></script>
