@@ -59,7 +59,7 @@ header.sticky {
 
 #menu-icon {
     color: var(--text-color);
-    font-size: 3rem;
+    font-size: 2.5rem;
     display: none;
     cursor: pointer;
 }
@@ -95,6 +95,10 @@ header nav ul li:not(nav ul li ul li) {
 }
 
 @media (min-width:1199px) {
+    /* body::-webkit-scrollbar {
+        width: 0;
+    } */
+
     header nav ul li ul .animate {
         position: relative;
         width: fit-content;
@@ -192,6 +196,7 @@ header nav ul li:not(nav ul li ul li) {
     header nav ul li ul li {
         padding: 5px 8px;
         margin: 8px 0;
+        cursor: pointer;
     }
     
     header nav ul li ul li:first-child,
@@ -447,7 +452,7 @@ section h2::after {
     
 .program-box .content-box .animation {
     width: 100%;
-    height: 500px;
+    height: 520px;
     padding: 20px;
     border-radius: 15px;
     display: flex;
@@ -495,9 +500,6 @@ section h2::after {
     z-index: 1;
     overflow: hidden;
     margin-top: 20px;
-}
-
-.program-box .content-box button a {
     color: var(--text-color);
 }
 
@@ -704,16 +706,16 @@ footer .copyright i {
         justify-content: space-between;
         padding: 18px 30px;
     }
+
+    
+    .logo img {
+        height: 2.7rem;
+    }
     
     #menu-icon {
         display: block;
         position: absolute;
         right: 20px;
-        transition: 0.3s;
-    }
-
-    #menu-icon:hover {
-        color: var(--main-color);
     }
 
     header nav ul:not(nav ul li ul) {
@@ -875,6 +877,10 @@ footer .copyright i {
 }
 
 @media (max-width:600px) {
+    .banner .text p {
+        line-height: 25px;
+    }
+
     .programs {
         padding: 20px 10px;
     }
@@ -931,6 +937,15 @@ footer .copyright i {
 }
 
 @media (max-width:410px) {
+    header {
+        justify-content: space-between;
+        padding: 18px 10px;
+    }
+
+    #menu-icon {
+        right: 10px;
+    }
+
     section h2 {
         font-size: 1.7rem;
         font-weight: 600;
@@ -983,15 +998,11 @@ footer .copyright i {
 
 @media (max-width:400px) {
     .banner {
-        padding: 95px 5px;
-    }
-
-    .banner .background {
-        display: none;
+        gap: 0;
     }
 
     .banner .text h2 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     .banner .text .btn {
@@ -1011,6 +1022,15 @@ footer .copyright i {
 
 @media (max-width:343px) {
     .banner .text h2 {
+        font-size: 1.3rem;
+    }
+
+    .banner .text p {
         font-size: 1rem;
+        line-height: 25px;
+    }
+
+    .banner .background {
+        display: none;
     }
 }
