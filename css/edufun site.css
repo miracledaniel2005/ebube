@@ -94,6 +94,14 @@ header nav ul li:not(nav ul li ul li) {
     position: relative;
 }
 
+header #icon1, #icon2 {
+    display: none;
+}
+
+header .fa-angle-down {
+    display: inline;
+}
+
 @media (min-width:1199px) {
     /* body::-webkit-scrollbar {
         width: 0;
@@ -711,6 +719,14 @@ footer .copyright i {
     .logo img {
         height: 2.7rem;
     }
+
+    header #icon1, #icon2 {
+        display: inline;
+    }
+
+    header .fa-angle-down {
+        display: none;
+    }
     
     #menu-icon {
         display: block;
@@ -723,7 +739,7 @@ footer .copyright i {
         background: var(--main-color);
         width: 100%;
         left: -100%;
-        top: 90px;
+        top: 85px;
         position: absolute;
         padding: 10px 20px;
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);

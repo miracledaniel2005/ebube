@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+    --animate-color: #ff2770;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.home-banner {
+    background: var(--bg-color);
+}
+
+.home-banner .write-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 140px 0;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.home-banner .write-up h2 {
+    font-size: 2.5rem;
+}
+
+.home-banner .write-up p {
+    font-size: 1.2rem;
+}
+
+.sect1 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: red;
+    padding: 100px 40px;
+}
+
+.sect1 .img-box {
+    width: 50%;
+    height: 500px;
+}
+
+.sect1 .img-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.sect1 .text {
+    background: var(--second-bg-color);
+    width: 50%;
+    padding: 20px 50px;
+    border-radius: 10px;
+    height: 500px;
+}
+
+.sect1 .text h3 {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.sect1 .text p {
+    color: var(--text-color);
+    line-height: 30px;
+    text-align: justify;
+    margin-top: 20px;
+    font-weight: 600;
+}
