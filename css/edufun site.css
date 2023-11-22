@@ -94,6 +94,10 @@ header nav ul li:not(nav ul li ul li) {
     position: relative;
 }
 
+header nav {
+    display: none !important;
+}
+
 header #icon1, #icon2 {
     display: none;
 }
@@ -718,6 +722,10 @@ footer .copyright i {
     
     .logo img {
         height: 2.7rem;
+    }
+
+    header nav {
+        display: block !important;
     }
 
     header #icon1, #icon2 {
