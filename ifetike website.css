@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 0;
 }
 :root {
     scroll-behavior: smooth;
@@ -508,6 +509,78 @@ input[type=checkbox] {
 }
 #gallery article button:active {
     box-shadow: none;
+}
+
+.donate-banner {
+    height: 45vh;
+    background: aqua;
+    background-image: url(ifetike\ website\ images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.donate-banner .text-box p {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+.donate-banner .text-box h2 {
+    font-weight: 800;
+    font-size: 4rem;
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000cc;
+    padding: 40px 80px;
+    position: relative;
+    top: 20px;
+    font-size: 1.2rem;
+    line-height: 26px;
+    text-align: justify;
+}
+
+.donate {
+    display: flex;
+    padding: 20px 80px;
+    background: #375a64;
+}
+
+.donate .bg-image {
+    width: 50%;
+    height: inherit;
+    background-image: url(ifetike\ website\ images/donate.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.donate .write-up {
+    width: 50%;
+    height: fit-content;
+    padding: 10px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.write-up .write1 {
+    padding: 20px 0;
+}
+
+.write-up .write2 {
+    padding: 20px 0;
+}
+
+.write-up h2 {
+    padding: 20px 0;
 }
 
 @keyframes slide {
