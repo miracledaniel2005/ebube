@@ -30,6 +30,39 @@ a {
     text-decoration: none;
 }
 
+button {
+    position: relative;
+    padding: 12px 20px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 300%;
+    top: -100%;
+    left: 0;
+    background: linear-gradient(
+        var(--bg-color), var(--main-color), var(--bg-color), var(--main-color)
+    );
+    z-index: -1;
+    transition: 0.8s;
+}
+
+button:hover::before {
+    top: 0;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -69,8 +102,21 @@ header nav ul {
     list-style: none;
 }
 
+header nav ul li .active a {
+    color: var(--main-color);
+}
+
 header nav ul li .active {
     color: var(--main-color);
+}
+
+header nav ul li .active:hover {
+    color: var(--main-color) !important;
+    background: none;
+}
+
+header nav ul li .active a:hover {
+    color: var(--main-color) !important;
 }
 
 .activate {
@@ -197,7 +243,7 @@ header .fa-angle-down {
     header nav ul li:hover ul {
         transition: 0.4s;
         visibility: visible;
-        top: 55px;
+        top: 50px;
         pointer-events: auto;
     }
     
@@ -218,6 +264,10 @@ header .fa-angle-down {
     
     header nav ul li ul li a {
         font-size: 0.9rem;
+    }
+
+    header nav ul li ul li a:hover {
+        color: var(--text-color) !important;
     }
 }
 
@@ -308,15 +358,16 @@ header .fa-angle-down {
 }
 
 .banner .background .slider {
-    display: flex;
+    /* display: flex; */
+    white-space: nowrap;
     width: 100%;
     height: 100%;
-    height: inherit;
     animation: slide 15s infinite linear 0s;
 }
 
 .banner .background .slider img {
     width: 100%;
+    height: 100%;
 }
 
 @keyframes slide {

@@ -3,280 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Edufun Technik STEM HUB</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../fontawesome-free-6.1.1-web/css/all.css">
-    <link rel="stylesheet" href="ifetike website.css">
-    <title>ifetike website</title>
+    <link rel="stylesheet" href="css/edufun site.css">
 </head>
 <body>
     <header>
-        <span id="title" onclick="document.location='index.html'" style="text-align: center;">
-            <h1>Prince Ifetike Chekwube </h1><span id="title-small">Foundation</span>
-        </span>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png">
+            </a>
+        </div>
+        <div class="bx bx-menu" id="menu-icon"></div>
         <nav>
-            <ul id="all-ul">
-                <input type="checkbox" id="check">
-                <input type="checkbox" id="check2">
-                <i class="fa fa-close" title="Close nav"></i>
-                <li class="click"><a href="#">Home</a></li>
-                <li id="nested">
-                    <a href="#"><label for="check" style="cursor: pointer;">About</label></a> <i class="fa fa-angle-down"></i>
-                    <ul id="nested-in" class="first-child">
-                        <li class="click2"><a href="#">Who We Are</a></li>
-                        <li class="click3"><a href="#about">About Us</a></li>
-                        <li class="click4"><a href="#team">Our Team</a></li>   
+            <ul class="nav-container">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li id="display1">
+                    <a class="activate1" style="cursor: pointer;">About Us 
+                        <i class='bx bx-chevron-down' id="icon1"></i>
+                        <i class='fa fa-angle-down'></i>
+                    </a>
+                    <ul class="hover">
+                        <span class="borderLine"></span>
+                            <div class="animate">
+                            <li><a href="about/story.html">Our Story</a></li>
+                            <li><a href="about/why girls.html">Why Girls</a></li>
+                            <li><a href="about/founder.html">Our Founder</a></li>
+                            <li><a href="about/team.html">Our Team</a></li>
+                        </div>
                     </ul>
                 </li>
-                <li id="nested">
-                    <a href="#"><label for="check2" style="cursor: pointer;">Our Programmes</label></a> <i class="fa fa-angle-down"></i>
-                    <ul id="nested-in" class="last-child">
-                        <li class="click5"><a href="#">Web Design</a></li>
-                        <li class="click6"><a href="#">Graphics Design</a></li>
-                        <li class="click7"><a href="#">Waste well</a></li>
-                        <li class="click8"><a href="#">Python Programming</a></li>
-                        <li class="click9"><a href="#">Bio-degradeble Waste</a></li>
+                <li id="display2">
+                    <a class="activate2" style="cursor: pointer;">What We Offer 
+                        <i class='bx bx-chevron-down' id="icon2"></i>
+                        <i class='fa fa-angle-down'></i>
+                    </a>
+                    <ul class="hover2">
+                        <span class="borderLine"></span>
+                        <div class="animate">
+                        <li><a href="programs/digital marketing.html">Digital Marketting</a></li>
+                        <li><a href="programs/sofware eng.html">Sofware Engeneering</a></li>
+                        <li><a href="programs/video edit.html">Video Editing</a></li>
+                        <li><a href="programs/robotics.html">Robotics for Kids</a></li>
+                        <li><a href="programs/coding.html">Coding for Kids</a></li>
+                        </div>
                     </ul>
                 </li>
-                <li class="click10"><a href="#gallery">Gallery</a></li>
-                <li class="click11"><a href="#contact">Contact</a></li>
-                <button id="btn" onclick="document.location='donate.html'">DONATE NOW</button>
+                <li><a href="special program.html">Special Programs</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <span class="active-nav"></span>
             </ul>
         </nav>
-        <button onclick="document.location='donate.html'">DONATE NOW</button>
-        <i class="fa fa-bars" title="Open nav"></i>
     </header>
-    <section id="hero">
-        <div class="content">
-            <h1>Providing empowerment, skill acqusition and social rehabilitation to the kids, Youths, elderly, widows and the volunarable in the society.</h1>
-            <div class="btn">
-                <button onclick="document.location='#'">Get Started</button>
+    
+    <div class="banner">
+        <div class="text">
+            <h3>STEM EDUCATION PROGRAMS FOR KIDS</h3>
+            <br>
+            <h2>Empower your kids with the hot tech skills of the future</h2>
+            <br>
+            <p>We teach kids ages 4-18 to create games, mobile apps, websites, and write codes that control robots and more.</p>
+            <br>
+            <button class="btn" onclick="document.location='download program.html'">Download Our Curriculum</button>
+        </div>
+        <div class="background">
+            <div class="slider">
+                <img src="images/banner.jpg">
+                <img src="images/banner2.jpg">
+                <img src="images/banner3.jpg">
+                <img src="images/banner4.jpg">
+                <img src="images/banner5.jpg">
+                <img src="images/banner6.jpg">
             </div>
         </div>
-    </section>
-    <section id="about" class="reveal">
-        <h1>About Us</h1>
-        <p>We believe that a small group of passionate people is all it takes to Create a sustainable development. We are not satisfied with the status quote. We are not satisfied with business as usual. We are not satisfied with anything less than greatness.</p>
-        <article>
-            <div class="about-img"></div>
-            <div class="about-text">
-                <ul>
-                    <li>We are reliable</li>
-                    <li>We offers 24/7 support to our customers</li>
-                    <li>Our servcies are affordable</li>
-                </ul>
-                <p>Welcome to Prince Ifetike Chekwube Foundation official website for the rememberance of my late Mum Ifetike Elizabeth Nwakacha with the sole aim of people providing empowerment, skill acqusition and social rehabilitation to the kids, Youths, elderly, widows and the volunarable in the society.</p>
-                <div class="more">
-                    <button onclick="document.location='#'">MORE ABOUT US</button>
-                </div>
-            </div>
-        </article>
-    </section>
-    <section id="team" class="reveal">
-        <h1>Our Team</h1>
-        <p>Our team is made up of very prominent persons, such like web designers, accountant and content creators.</p>
-        <main>
-        <article>
-            <img src="../Master ifetike website/ifetike website images/about-image.jpg">
-            <h1>Prince Ifetike Chekwube</h1>
-            <p>Founder of Ifetike Chekwube Foundation</p>
-            <div class="social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-            </div>
-        </article>
-        <article>
-            <img src="../Master ifetike website/ifetike website images/my image2.png">
-            <h1>Eze Ebube M.D</h1>
-            <p>Web Designer</p>
-            <div class="social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-            </div>
-        </article>
-        <article>
-            <img src="../Master ifetike website/ifetike website images/team-1.jpg">
-            <h1>Eze Izuchukwu</h1>
-            <p>Graphics Designer</p>
-            <div class="social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-            </div>
-        </article>
-        <article>
-            <img src="../Master ifetike website/ifetike website images/team-2.jpg">
-            <h1>Okechukwu Chibuzor</h1>
-            <p>Artist</p>
-            <div class="social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-            </div>
-        </article>
-        </main>
-    </section>
-    <section id="subscribe" class="reveal">
-        <article>
-        <p>Providing empowerment, skill acqusition and social rehabilitation to the kids, Youths, elderly, widows and the volunarable in the society.</p>
-        <form action="https://formsubmit.co/66e54db89a74b86dfce6781194371bf4" method="POST">
-        <input type="text" name="_honey" style="display:none;">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="email" name="e-mail" placeholder="Enter user email" id="email-el" required>
-        <button>SUBSCRIBE</button>
-            </form>
-            </article>
-    </section>
-    <section id="gallery" class="reveal">
-        <h1>Gallery</h1>
-        <p>Providing empowerment, skill acqusition and social rehabilitation to the kids, Youths, elderly, widows and the volunarable in the society.</p>
-        <main>
-            <div class="slider">
-                <div class="slide">
-                    <img src="../Master ifetike website/ifetike website images/gallery9.jpg">
-                    <img src="../Master ifetike website/ifetike website images/gallery5.jpg">
-                    <img src="../Master ifetike website/ifetike website images/gallery6.jpg">
-                    <img src="../Master ifetike website/ifetike website images/gallery7.jpg">
-                    <img src="../Master ifetike website/ifetike website images/gallery8.jpg">
-                    <img src="../Master ifetike website/ifetike website images/gallery10.jpg">
-                    <img src="../Master ifetike website/ifetike website images/gallery11.jpg">
-                    <img src="../Master ifetike website/ifetike website images/343593179_243454908203857_2080549636791766320_n(1).jpg">
-                    <img src="">
-                </div>
-            </div>
-            <article>
-                <p>Providing empowerment, skill acqusition and social rehabilitation to the kids, Youths, elderly, widows and the volunarable in the society.</p>
-                <div class="visit">
-                    <button onclick="document.location='#'">VISIT GALLERY</button>
-                </div>
-            </article>
-        </main>
-    </section>
-    <section id="contact" class="reveal">
-        <h1>Contact</h1>
-        <p>You can get in touch with us through the following medium</p>
-        <main>
-            <article>
-                <aside>
-                    <i class="fa fa-location-dot"></i>
-                    <span>
-                        <h3>Location:</h3>
-                        <a href="https://www.google.com/maps/dir//Prince+Ifetike+Chekwube+Foundation/data=!4m8!4m7!1m0!1m5!1m1!1s0x10447bdaca27bc89:0xa2dcb45caea74d1c!2m2!1d7.0031842!2d6.4607113">HRM Igwe SU Ifetike Palace Otu Umerum
-                            Umerum, Anambra
-                            Nigeria</a>
-                    </span>
-                </aside>
-                <aside>
-                    <i class="fa fa-envelope"></i>
-                    <span>
-                        <h3>Email:</h3>
-                        <a href="mailto:princeifechekwubefoundation@gmail.com">Contact@gmail.com</a>
-                    </span>
-                </aside>
-                <aside>
-                    <i class="fa fa-phone"></i>
-                    <span>
-                        <h3>Call:</h3>
-                        <a href="tel:08062608637">+234 806 260 8637</a>
-                    </span>
-                </aside>
-                <aside>
-                        <i class="fa fa-clock"></i>
-                        <span>
-                            <h3>Open Hours:</h3>
-                            <p>Mon-Fri: 9:00am-5:00pm</p>
-                        </span>
-                </aside>
-            </article>
-            <form action="https://formsubmit.co/66e54db89a74b86dfce6781194371bf4" method="POST">
-                <div class="row1">
-                    <input type="text" name="_honey" style="display:none;">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" placeholder="Enter your name" name="user-name" id="name" required>
-                    <input type="email" placeholder="Enter your email" name="e-mail" id="email" required>
-                </div>
-                <div class="row2">
-                    <input type="text" placeholder="write your compaint" name="input" id="complain" required>
-                    <textarea placeholder="Comment" name="comment" id="comment" cols="30" rows="10" required></textarea>
-                    <div class="submit">
-                        <button id="submit-el">Send Message</button>
+    </div>
+
+    <section class="programs">
+        <h2>Our Programs</h2>
+        <div class="program-box">
+            <div class="content-box">
+                <span class="borderLine"></span>
+                <div class="animation">
+                    <img src="images/banner3.jpg">
+                    <div class="content">
+                        <h3>Coding for Kids</h3>
+                        <br>
+                        <p>We teach kids to program interactive stories, games, and animations.</p>
+                        <button onclick="document.location='download program.html'">LEARN MORE</button>
                     </div>
                 </div>
-            </form>
-        </main>
+            </div>
+            <div class="content-box">
+                <span class="borderLine"></span>
+                <div class="animation">
+                    <img src="images/banner.jpg">
+                    <div class="content">
+                        <h3>Robotics for Kids</h3>
+                        <br>
+                        <p>Explore the world of robotics and learn how coding and robot design can solve both big and small problems.</p>
+                        <button onclick="document.location='download program.html'">LEARN MORE</button>
+                    </div>    
+                </div>
+            </div>
+            <div class="content-box">
+                <span class="borderLine"></span>
+                <div class="animation">
+                    <img src="images/banner2.jpg">
+                    <div class="content">
+                        <h3>Web Developer Bootcamp</h3>
+                        <br>
+                        <p>Learn to use HTML, CSS, and Javascript to create beautiful and fully functional websites.</p>
+                        <button onclick="document.location='download program.html'">LEARN MORE</button>
+                    </div>    
+                </div>
+            </div>
+            <div class="content-box">
+                <span class="borderLine"></span>
+                <div class="animation">
+                    <img src="images/banner6.jpg">
+                    <div class="content">
+                        <h3>Basic Computer Appreciation</h3>
+                        <br>
+                        <p>Master Computer Fundamentals , Windows 10, Microsoft Word, PowerPoint, Excel, Desktop Support, Basic Computer Skills.</p>
+                        <button onclick="document.location='download program.html'">LEARN MORE</button>
+                    </div>    
+                </div>
+            </div>
+            <div class="content-box">
+                <span class="borderLine"></span>
+                <div class="animation">
+                    <img src="images/banner4.jpg">
+                    <div class="content">
+                        <h3>Digital Marketing Bootcamp</h3>
+                        <br>
+                        <p>Learn use of various digital channels to market products and services in order to reach consumers.</p>
+                        <button onclick="document.location='download program.html'">LEARN MORE</button>
+                    </div>    
+                </div>
+            </div>
+            <div class="content-box">
+                <span class="borderLine"></span>
+                <div class="animation">
+                    <img src="images/banner5.jpg">
+                    <div class="content">
+                        <h3>Social Media Marketing Bootcamp</h3>
+                        <br>
+                        <p>Learn to leverage the power of popular social media networks to achieve your marketing and branding goals.</p>
+                        <button onclick="document.location='download program.html'">LEARN MORE</button>
+                    </div>    
+                </div>
+            </div>
+            
+        </div>
     </section>
-    <footer class="reveal">
-        <main>
-        <div class="sect1">
-            <main id="topic" onclick="document.location='index.html'">
-                <h1>Prince Ifetike Chekwube<br> <span id="title-small">Foundation</span></h1>
-            </main>
-            <form action="https://formsubmit.co/66e54db89a74b86dfce6781194371bf4" method="POST">
-                <input type="text" name="_honey" style="display:none;">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="email" name="e-mail" placeholder="Enter user email" id="email-el" required>
-                <button>SUBSCRIBE</button>
-            </form>
-            <div class="social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-whatsapp"></a>
+
+    <section class="partners">
+        <h2>Our Amazing Partners</h2>
+        <div class="slider">
+            <div class="slide">
+                <img src="images/partner.png">
+                <img src="images/partner2.jpg">
+                <img src="images/partner3.png">
+                <img src="images/partner4.png">
+                <img src="images/partner5.png">
+                <img src="images/partner6.png">
+                <img src="images/partner8.jpg">
+                <img src="images/partner9.png">
+                <img src="images/partner10.png">
+                <img src="images/partner7.jpg">
             </div>
         </div>
-        <div class="sect2">
-            <article>
-                <h1>Useful Links</h1>
-                <span>
-                    <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#">Our Programmes</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-                </span>
-            </article>
-            <article>
-                <h1>Our Programmes</h1>
-                <span>
-                    <ul>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Graphics Design</a></li>
-                    <li><a href="#">Waste well</a></li>
-                    <li><a href="#">Python Programming</a></li>
-                    <li><a href="#">Bio-degradeble Waste</a></li>
-                </ul>
-                </span>
-            </article>
-            <article>
-                <h1>Contact Us</h1>
-                <span>
-                    <h3>Location:</h3>
-                    <li><a href="https://www.google.com/maps/dir//Prince+Ifetike+Chekwube+Foundation/data=!4m8!4m7!1m0!1m5!1m1!1s0x10447bdaca27bc89:0xa2dcb45caea74d1c!2m2!1d7.0031842!2d6.4607113">HRM Igwe SU Ifetike Palace Otu Umerum
-                        Umerum, Anambra
-                        Nigeria</a></li>
-                        <h3>Email:</h3>
-                    <li><a href="mailto:princeifechekwubefoundation@gmail.com">Contact@gmail.com</a></li>
-                    <h3>Call:</h3>
-                    <li><a href="tel:08062608637">+234 806 260 8637</a></li>
-                </span>
-            </article>
+    </section>
+
+    <footer>
+        <div class="main">
+            <div class="box1">
+                <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png">
+            </a>
         </div>
-        </main>
-    </footer>
-    <div class="line"></div>
-    <div class="copyright">
-        <p>Copyright &copy; Prince Ifetike Chekwube Foundation. All Rights Reserved.</p>
-        <p>Designed by Eze Ebube M.D</p>
+        <div class="write-up">
+            <p>Edufun Technik delivers world-class immersive STEM education to kids and works to get more girls and young people into STEM careers.</p>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
     </div>
-    <script src="ifetike website.js"></script>
+    <div class="box2">
+        <h2>Programs</h2>
+            <ul>
+                <li><a href="programs/digital marketing.html">Digital Marketting</a></li>
+                <li><a href="programs/sofware eng.html">Sofware Engeneering</a></li>
+                <li><a href="programs/video edit.html">Video Editing</a></li>
+                <li><a href="programs/robotics.html">Robotics for Kids</a></li>
+                <li><a href="programs/coding.html">Coding for Kids</a></li>
+            </ul>
+        </div>
+        <div class="box3">
+            <h2>About Us</h2>
+            <ul>
+                <li><a href="about/story.html">Our Story</a></li>
+                <li><a href="about/why girls.html">Why Girls</a></li>
+                <li><a href="about/founder.html">Our Founder</a></li>
+                <li><a href="about/team.html">Our Team</a></li>
+            </ul>
+        </div>
+        <div class="box4">
+            <h2>Get In Touch</h2>
+            <p>Location:</p>
+            <a href="https://www.google.com/maps/place/Edufun+Technik+STEM+Hub/@6.1554138,6.7925061,17z/data=!3m1!4b1!4m6!3m5!1s0x1043934754b6c487:0x69e1579cb4ad63f4!8m2!3d6.1554085!4d6.795081!16s%2Fg%2F11pphcp2r5?entry=ttu" target="_blank">6 Park Rd, GRA, Onitsha, Anambra</a>
+            <p>Email:</p>
+            <a href="mailto:info@edufuntechnik.com">info@edufuntechnik.com</a>
+            <p>Call:</p>
+            <a href="tel:+234 809 575 7722">+234 809 575 7722</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2023 Edufun Technik. All Rights Reserved.</p>
+        <!-- <h3>Designed and developed by <strong>Eze Ebube M.D</strong></h3> -->
+        <a href="#"><i class="fa fa-arrow-up"></i></a>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
