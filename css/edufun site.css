@@ -683,7 +683,6 @@ footer .copyright {
     text-align: center;
     border-top: 2px solid var(--main-color);
     color: var(--text-color);
-    background: var(--bg-color);
     position: relative;
 }
 
@@ -757,6 +756,10 @@ footer .copyright i {
         display: grid;
         justify-content: center;
         align-items: center;
+    }
+
+    footer .box4 {
+        justify-content: start;
     }
 }
 
