@@ -123,13 +123,18 @@
         height: 400px;
     }
 
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .sec1 article {
+        text-align: start;
+    }
+
     .sec1 .image,
     .sec1 .image2,
     .sec1 .image3 {
         height: 400px;
-    }
-    .banner h1 {
-        font-size: 2rem;
     }
 }
 
