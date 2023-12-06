@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/edufun site.css">
-    <link rel="stylesheet" href="../css/story.css">
+    <link rel="stylesheet" href="../css/team.css">
 </head>
 <body>
     <header>
@@ -28,10 +28,10 @@
                     <ul class="hover">
                         <span class="borderLine"></span>
                             <div class="animate">
-                            <li class="active"><a href="../about/story.html">Our Story</a></li>
+                            <li><a href="../about/story.html">Our Story</a></li>
                             <li><a href="../about/why girls.html">Why Girls</a></li>
                             <li><a href="../about/founder.html">Our Founder</a></li>
-                            <li><a href="../about/team.html">Our Team</a></li>
+                            <li class="active"><a href="../about/team.html">Our Team</a></li>
                         </div>
                     </ul>
                 </li>
@@ -43,7 +43,7 @@
                     <ul class="hover2">
                         <span class="borderLine"></span>
                         <div class="animate">
-                        <li><a href="programs/digital marketing.html">Digital Marketting</a></li>
+                            <li><a href="programs/digital marketing.html">Digital Marketting</a></li>
                         <li><a href="programs/sofware eng.html">Sofware Engeneering</a></li>
                         <li><a href="programs/video edit.html">Video Editing</a></li>
                         <li><a href="programs/robotics.html">Robotics for Kids</a></li>
@@ -59,45 +59,56 @@
         </nav>
     </header>
 
-    <div class="home-banner">
-        <div class="write-up">
-            <h2>About Us</h2>
-            <p>Edufun Technik delivers world-class immersive STEM education to kids and works to get more girls and young people into STEM careers.</p>
-        </div>
+    <div class="banner">
+        <div class="image">
+            <img src="../images/banner4.jpg">
         </div>
 
-        <section class="sect1">
-            <div class="img-box">
-                <img src="../images/banner.jpg">
-            </div>
-            <article class="text">
-                <h3>Our Story</h3>
-                <p>
-                    Founded in 2014, we teach kids Coding, Robotics, Web & Mobile App Development and other in-demand STEM Skills. We run in-school, afterschool, weekend, holiday and online Tech Boot Camps. We are raising tomorrow's thinkers, innovators, and creators.
-                </p>
-                <p>
-                    We are firm believers in cultivating the hidden potential that all children possess. Our professionally designed programs enrich the school curriculum by awakening your children’s undiscovered skills and nurturing them for future success based on their natural abilities and interests.
-                </p>
-            </article>
-        </section>
-        <section class="sect2">
-            <article class="text">
-                <h3>Meet Our Founder/CEO</h3>
-                <p>
-                    Uchenna has and over seven (7) years’ experience in STEM Curriculum Development and Implementation of Gender-Enhancing STEM Education for Children/youths in a resource-limited/under-privileged communities in Nigeria.
-                </p>
-                <p>
-                    Currently, Edufun Technik is providing 15000 Pupils, and 17800 Students and Youths termly with practical hands-on training with the platform to acquire the 21st century skill and gives exposure to Computer Science, Robotics and Artificial Intelligence. skills and nurturing them for future success based on their natural abilities and interests.
-                </p>
-                <div class="btn">
-                    <button onclick="document.location='../about/founder.html'">Read her Bio</button>
-                </div>
-            </article>
-            <div class="img-box">
-                <img src="../images/CEO2.jpg">
-                <h3>Uchenna Onwuamaegbu-Ugwu — Founder & CEO.</h3>
-            </div>
-        </section>
+        <div class="write-up">
+            <p>Team Edufun STEM & Robotics center is more than a collection of permanent & volunteer hands. We are a dedicated, passionate team, and we blend traditional values of education, teaching & learning with progressive design-thinking, problem solving and analytical reasoning. Our combined Nigerian team and international support advisors is 88 percent female, and nearly 30 percent are graduates of Edufun’s flagship and Legacy Program, Bridging the STEM-Gender Gap also tagged, Mind the Gap Project. This vision and race combined with gender mirroring ensures critical empathy and cultural relevance at every juncture, key to Girl Pioneers’ success in STEM related careers and in preparation for the future of work.</p>
+        </div>
+    </div>
+
+    <section class="team">
+        <h2>Our Team</h2>
+        <div class="wrapper">
+        <div class="card">
+            <div class="header">
+            <img src="../images/founder.jpg">
+            <aside>
+            <h3>Uchenna Onwuamaegbu-Ugwu</h3>
+            <p>Founder / CEO</p>
+        </aside>
+        </div>
+        <p id="last-p"> 				
+        She holds a degree in Psychology and Innovative Business/Entrepreneurship Certificate from Kellogg School of Management Northwestern University Illinois USA and over 4-years’ experience in STEM Curriculum Development and Implementation of Gender-Enhancing STEM Education for Children/youths in a resource-limited/underprivileged communities in Nigeria. She mentored young girls that won a global gold award in Silicon Valley, USA.
+        </p>
+        </div>
+        <div class="card">
+        <div class="header">
+        <img src="../images/team.png">
+        <aside>
+        <h3>Bright Chimezie Irem</h3>
+        <p>Program Manager</p>
+        </aside>
+        </div>
+        <p id="last-p">
+            Google certified Project Manager, Project Management Professional (PMP), World Bank Group Youth Innovate for Impact Alumnus & a Mandela Washington Fellow. In charge of programs and project designs, Design-Thinking/Problem-Solving leader with Monitoring & Evaluation (M&E).
+        </p>
+        </div>
+
+        <div class="card">
+        <div class="header">
+        <img src="../images/team2.png">
+        <aside>
+        <h3>Chukwuemeka Fred Agbata</h3>
+        <p>Communications<span>/Marketing</span></p>
+        </aside>
+        </div>
+        <p id="last-p">Nigerian journalist, technology entrepreneur, business coach, public speaker and television presenter at Channels TV where he hosts the show Tech Trends. He is also a columnist for The Punch called ICT clinic.</p>
+        </div>
+        </div>
+    </section>
 
     <footer>
         <div class="main">
@@ -153,6 +164,6 @@
     </div>
     </footer>
 
-    <script src="../script.js"></script>
+    <script src="../script.js" defer></script>
 </body>
 </html>

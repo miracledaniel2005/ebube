@@ -39,7 +39,6 @@ hover2.onmouseleave = () => {
 activate.addEventListener("click", () => {
     navDisplay.classList.toggle("display");
     iconBar1.classList.toggle("bx-chevron-up");
-    // if (body.innerwidth < 500)
 });
 
 activate2.addEventListener("click", () => {

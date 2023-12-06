@@ -23,6 +23,7 @@
     display: flex;
     align-items: center;
     padding: 20px 40px;
+    height: calc(100vh - 93.2986px);
 }
 
 .banner .image {
@@ -85,4 +86,31 @@
     padding: 10px;
     color: var(--text-color);
     text-align: justify;
+}
+
+.achieve {
+    padding: 20px 50px;
+}
+
+.achieve article {
+    margin-top: 5px;
+    padding: 10px;
+    color: var(--text-color);
+}
+
+.achieve article p {
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.3rem;
+    width: 70%;
+    margin: auto;
+}
+
+.media {
+    padding: 20px 50px;
+    background: var(--bg-color);
+}
+
+.media a {
+    color: var(--text-color);
 }
