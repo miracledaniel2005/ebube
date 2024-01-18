@@ -22,6 +22,17 @@ html {
     scroll-behavior: smooth;
 }
 
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 body {
     background: var(--second-bg-color);
 }
@@ -103,6 +114,10 @@ header nav ul {
 }
 
 header nav ul li .active a {
+    color: var(--main-color);
+}
+
+ul li .active {
     color: var(--main-color);
 }
 
@@ -838,7 +853,7 @@ footer .copyright i {
         display: block;
     }
     
-      header nav ul li ul li {
+    header nav ul li ul li {
         padding: 5px 0;
         margin: 5px 0;
     }

@@ -56,6 +56,8 @@
 .sect2 .img-box {
     width: 100%;
     height: 450px;
+    box-shadow: 0 0 5px var(--main-color);
+    border-radius: 10px;
 }
 
 .sect1 .img-box img,
