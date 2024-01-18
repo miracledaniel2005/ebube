@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+    --animate-color: #ff2770;
+}
+
+.banner {
+    padding: 80px;
+    background: var(--bg-color);
+}
+
+.banner h1 {
+    color: var(--main-color);
+    font-size: 3.5rem;
+}
+
+.page {
+    box-shadow: 0 2px 4px var(--bg-color);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 30px 140px;
+}
+
+.container .box {
+    width: 100%;
+    padding: 10px;
+    height: fit-content;
+}
+
+.container .box img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.container .box .content {
+    text-align: center;
+}
+
+.container .box .content h3 {
+    color: var(--main-color);
+}
+
+.container .box .content p {
+    color: rgb(255, 255, 255, 0.5);
+    margin-top: 3px;
+}
+
+.page .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 30px;
+}
+
+.page .pagination a {
+    color: var(--text-color);
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.page .pagination a:hover {
+    color: var(--main-color);
+}
+
+.page .pagination a.selected {
+    color: var(--main-color);
+}
+
+@media (max-width:1250px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 30px 40px;
+    }
+}
+
+@media (max-width:750px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
+
+@media (max-width:550px) {
+    .page .pagination {
+        gap: 2px;
+        padding: 20px 10px;
+    }
+    
+    .page .pagination a {
+        padding: 10px 8px;
+    }
+}
+
+@media (max-width:450px) {
+    .banner {
+        padding: 30px 0;
+    }
+    
+    .banner h1 {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    .page .pagination {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    
+    .page .pagination a {
+        padding: 10px 5px;
+    }
+}
