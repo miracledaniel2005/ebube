@@ -19,10 +19,12 @@ window.addEventListener("scroll", reveal);
 window.onscroll = () => {
     const header  = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 100);
-    // menuBar.classList.remove("bx-x");
-    // navContainer.classList.remove("active");
-    // navDisplay.classList.remove("display");
-    // navDisplay2.classList.remove("display");
+    if (window.scrollY > 100) {
+        menuBar.classList.remove("bx-x");
+        navContainer.classList.remove("active");
+        navDisplay.classList.remove("display");
+        navDisplay2.classList.remove("display");
+    }
 }
 
 const hover = document.querySelector(".hover"),

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+    --animate-color: #ff2770;
+}
+
+.blog-box1 {
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+    gap: 40px;
+}
+
+.blog-box1 .img-box {
+    width: 50%;
+    box-shadow: 0 0 10px var(--main-color);
+    border-radius: 8px;
+}
+
+.blog-box1 .text {
+    width: 50%;
+    padding: 40px;
+}
+
+.blog-box1 .text p {
+    color: var(--text-color);
+    font-weight: 600;
+    line-height: 40px;
+    text-align: justify;
+    padding: 10px;
+}
+
+
+.blog-box1 .img-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.content1 {
+    background: var(--bg-color);
+}
+
+.content2 {
+    background: var(--bg-color);
+}
+
+.content3 {
+    background: var(--second-bg-color);
+}
+
+.text-content {
+    padding: 5px 50px;
+}
+
+.text-content h1 {
+    color: var(--main-color);
+}
+
+.text-content ul {
+    list-style-type: circle;
+    list-style: radial-gradient(var(--main-color), var(--animate-color), var(--second-bg-color), var(--animate-color));
+    margin: auto;
+    width: fit-content;
+}
+
+.text-content ul li {
+    color: var(--text-color);
+    margin: 15px 0;
+    line-height: 30px;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.content-img {
+    width: 80%;
+    margin: auto;
+}
+
+.content-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
