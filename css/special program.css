@@ -85,7 +85,8 @@
 }
 
 .sec1 .write-up article p a {
-    color: blue;
+    color: var(--main-color);
+    text-decoration: underline;
 }
 
 .sec1 .image,

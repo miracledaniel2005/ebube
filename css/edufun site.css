@@ -280,6 +280,21 @@ header nav ul li ul .animate {
     header nav ul li ul li a:hover {
         color: var(--text-color) !important;
     }
+
+    header nav ul li a.signup {
+        padding: 12px 20px;
+        background: transparent;
+        border: 2px solid var(--main-color);
+        border-radius: 15px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--text-color);
+    }
+    
+    header nav ul li a.signup:hover {
+        border: 2px solid var(--text-color);
+        box-shadow: 0 5px 5px var(--bg-color);
+    }
 }
 
 @keyframes rotate {
